@@ -266,6 +266,16 @@ p  { margin: 0 0 1.1em; }
 .pillar { text-align: center; }
 .pillar .card-icon { margin-inline: auto; }
 
+/* Initials avatar, used until a member photo is available */
+.avatar-initials {
+  display: grid; place-items: center; aspect-ratio: 1; width: 100%;
+  border-radius: var(--radius); background: var(--grad-signature); color: #fff;
+  font-family: var(--font-heading); font-weight: 700; font-size: clamp(3rem, 8vw, 5.5rem); letter-spacing: .04em;
+}
+.member-card .avatar-initials { width: 96px; margin: 0 auto 1rem; border-radius: 50%; font-size: 2rem; border: 3px solid var(--soft-lavender); }
+.profile-tags { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1.25rem 0 1.5rem; }
+.profile-bio p { color: #4a3a5c; }
+
 /* Tags & badges */
 .tag {
   display: inline-block; font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
@@ -542,7 +552,7 @@ p  { margin: 0 0 1.1em; }
   .split, .newsletter { grid-template-columns: 1fr; }
   .hero::before { width: 100%; opacity: .2; }
   .spotlight { grid-template-columns: 1fr; }
-  .spotlight img { max-width: 280px; }
+  .spotlight img, .spotlight .avatar-initials { max-width: 280px; }
   .stats { grid-template-columns: repeat(2, 1fr); gap: 2.5rem 1.5rem; }
   .portal { grid-template-columns: 1fr; }
   .portal-nav { position: static; }
