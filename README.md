@@ -6,19 +6,17 @@ A static, dependency-free site (HTML, CSS, vanilla JS) built from the Her Circle
 
 ## Pages
 
-Follows the brand site map:
-
-| Page | File | Sections |
+| Page | File | Contents |
 | --- | --- | --- |
-| Home | `index.html` | Hero, welcome, four pillars, impact stats, community spotlight, upcoming events, newsletter, call to action |
-| About | `about.html` | Our story, mission, impact, leadership / team, why Her Circle exists |
-| Community | `community.html` | Overview, community groups (career, wellness, business, personal growth, social), member directory, discussions, spotlights |
-| Events | `events.html` | Filterable upcoming events, event calendar, past events |
-| Mentorship | `mentorship.html` | Find a mentor, programs, success stories, become a mentor, resources, application form |
-| Membership | `membership.html` | Benefits, tiers, FAQ, join form |
-| Stories | `stories.html` | Featured woman, filterable member stories / interviews / success stories |
-| Contact | `contact.html` | Contact form, partnership, speaking, media / press, social media |
-| Member Portal | `portal.html` | Dashboard, profile, connections, messages, groups, registered events, saved resources, mentorship, account settings (front-end mock) |
+| Home | `index.html` | Introduction, four pillars, member spotlight, events notice, newsletter |
+| About | `about.html` | Story, mission, why Her Circle exists |
+| Community | `community.html` | Overview, community groups, members |
+| Events | `events.html` | Upcoming (notify me), event formats, past events |
+| Mentorship | `mentorship.html` | Find a mentor, how it works, become a mentor, application |
+| Membership | `membership.html` | What's included, how to join, application, FAQ |
+| Stories | `stories.html` | Member profiles (Kristin Ma), share your story |
+| Contact | `contact.html` | Contact form, partnership / speaking / press inquiries |
+| Member login | `portal.html` | Sign-in screen for the future member area |
 
 ## Brand system
 
@@ -26,19 +24,19 @@ All tokens live at the top of `assets/css/styles.css`:
 
 - **Primary:** Primary Purple `#51217D`, Royal Purple `#6D2FA3`, Soft Violet `#9564C5`
 - **Secondary:** Deep Navy Blue `#074787`, Bright Brand Blue `#0876C9`
-- **Accent:** Warm Gold `#D6A431` (used sparingly: dividers, icons, highlights)
+- **Accent:** Warm Gold `#D6A431` (used sparingly: section markers, active nav)
 - **Neutrals:** Soft Lavender `#F3ECFA`, Lavender Gray `#E6DDF0`, Warm White `#FDFCFD`, Dark Plum `#271538` (body text)
 - **Gradients:** signature, purple-to-blue, soft lavender
 - **Type:** Playfair Display (headings), Montserrat (body), via Google Fonts
 
-Icons are an inline SVG sprite (`src/partials/icons.svg`) matching the outline icon set in the style sheet. Photography in `assets/img/` was generated with Higgsfield.
+Photography in `assets/img/` was generated with Higgsfield.
 
 ## Editing
 
 Pages are assembled from `src/` so the header, footer and icons are defined once:
 
 ```
-src/partials/   layout.html, header.html, footer.html, icons.svg
+src/partials/   layout.html, header.html, footer.html, icons.svg (menu icons)
 src/pages/      one file per page (metadata comment + page body)
 ```
 
@@ -63,6 +61,6 @@ The built site is in the repository root, so it can be served directly by GitHub
 
 ## Next steps
 
-- **Forms** (newsletter, join, mentorship, contact) currently show a success message without sending data. Give each `<form data-demo>` an `action` pointing at a form service (Formspree, Netlify Forms, etc.) or your backend and it will submit normally.
-- **Member Portal** is a front-end mock; it needs authentication and a backend to become real.
-- People, quotes, events and statistics are placeholder content — replace them with real members and data.
+- **Forms** (newsletter, membership, mentorship, contact) show a confirmation but don't send data yet. Give each `<form data-demo>` an `action` pointing at a form service (Formspree, Netlify Forms, etc.) or your backend and it will submit normally.
+- **Member login** is a placeholder screen; the member area needs authentication and a backend.
+- **Content to add:** the founding story, leadership team, event dates, membership pricing, more member profiles, and member photos (Kristin Ma currently has an initials placeholder).

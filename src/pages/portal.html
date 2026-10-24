@@ -1,133 +1,27 @@
 <!--
-title: Member Portal
-description: Your Her Circle dashboard, profile, connections, messages, groups, events, saved resources and mentorship.
+title: Member login
+description: Sign in to the Her Circle member area.
 nav: portal
 -->
-<section class="page-hero" style="padding:3.5rem 0">
+<header class="page-head">
   <div class="container">
-    <span class="eyebrow">Member Portal</span>
-    <h1>Welcome back, Mei</h1>
-    <p>Here&rsquo;s what&rsquo;s happening in your circle.</p>
+    <p class="label">Members</p>
+    <h1>Member login</h1>
+    <p>Your profile, connections, messages, groups, event registrations and saved resources in one place.</p>
   </div>
-</section>
+</header>
 
-<section class="section" style="padding-top:3rem">
-  <div class="container portal">
-    <aside class="portal-nav" aria-label="Portal navigation">
-      <div class="portal-user">
-        <img src="assets/img/member-1.jpg" alt="" width="48" height="48">
-        <div><strong>Mei Tanaka</strong><span>Circle member</span></div>
-      </div>
-      <ul>
-        <li><a href="#dashboard" data-panel="dashboard" class="is-active"><svg class="icon"><use href="#i-home"/></svg> Dashboard</a></li>
-        <li><a href="#profile" data-panel="profile"><svg class="icon"><use href="#i-user"/></svg> My Profile</a></li>
-        <li><a href="#connections" data-panel="connections"><svg class="icon"><use href="#i-about"/></svg> My Connections</a></li>
-        <li><a href="#messages" data-panel="messages"><svg class="icon"><use href="#i-chat"/></svg> Messages</a></li>
-        <li><a href="#groups-panel" data-panel="groups-panel"><svg class="icon"><use href="#i-groups"/></svg> My Groups</a></li>
-        <li><a href="#events-panel" data-panel="events-panel"><svg class="icon"><use href="#i-calendar"/></svg> Registered Events</a></li>
-        <li><a href="#saved" data-panel="saved"><svg class="icon"><use href="#i-bookmark"/></svg> Saved Resources</a></li>
-        <li><a href="#mentorship-panel" data-panel="mentorship-panel"><svg class="icon"><use href="#i-lotus"/></svg> Mentorship</a></li>
-        <li><a href="#settings" data-panel="settings"><svg class="icon"><use href="#i-settings"/></svg> Account Settings</a></li>
-      </ul>
-    </aside>
-
+<section class="section">
+  <div class="container row">
+    <p class="label">Sign in</p>
     <div>
-      <section class="portal-panel is-active" id="dashboard">
-        <h2>Dashboard</h2>
-        <div class="grid grid-3">
-          <div class="card"><div class="card-icon"><svg class="icon"><use href="#i-calendar"/></svg></div><h4>2 upcoming events</h4><p>Next: Autumn Circle Soir&eacute;e, Nov 14</p></div>
-          <div class="card"><div class="card-icon card-icon--blue"><svg class="icon"><use href="#i-chat"/></svg></div><h4>3 new messages</h4><p>From Priya, Ana and your Business circle</p></div>
-          <div class="card"><div class="card-icon card-icon--gold"><svg class="icon"><use href="#i-bell"/></svg></div><h4>5 notifications</h4><p>New discussion replies and group invites</p></div>
-        </div>
-        <div class="card" style="margin-top:1.75rem">
-          <h3>Mentorship progress</h3>
-          <p>Session 4 of 6 with Priya Raman</p>
-          <div class="progress"><span style="width:66%"></span></div>
-          <p class="form-note">Next session: Nov 19 &middot; Goal: Prepare pitch for wholesale partners</p>
-        </div>
-      </section>
-
-      <section class="portal-panel" id="profile">
-        <h2>My Profile</h2>
-        <form class="form card" data-demo>
-          <div class="form-row">
-            <div class="field"><label for="p-name">Name</label><input id="p-name" value="Mei Tanaka"></div>
-            <div class="field"><label for="p-title">Title</label><input id="p-title" value="Founder, Bloom Studio"></div>
-          </div>
-          <div class="field"><label for="p-bio">Bio</label><textarea id="p-bio">Floral designer and entrepreneur building a sustainable design studio. Passionate about small business and creative leadership.</textarea></div>
-          <button class="btn btn-primary" type="submit">Save profile</button>
-          <p class="form-success" role="status">Profile saved.</p>
-        </form>
-      </section>
-
-      <section class="portal-panel" id="connections">
-        <h2>My Connections</h2>
-        <div class="card">
-          <div class="list-row"><div class="person"><img src="assets/img/member-2.jpg" alt="" width="44" height="44"><div><strong>Priya Raman</strong><span>VP Operations &middot; Mentor</span></div></div><a class="btn btn-outline btn-sm" href="#messages" data-panel="messages">Message</a></div>
-          <div class="list-row"><div class="person"><img src="assets/img/member-3.jpg" alt="" width="44" height="44"><div><strong>Ana Reyes</strong><span>Product Designer</span></div></div><a class="btn btn-outline btn-sm" href="#messages" data-panel="messages">Message</a></div>
-          <div class="list-row"><div class="person"><img src="assets/img/member-4.jpg" alt="" width="44" height="44"><div><strong>Grace Lin</strong><span>Founder, Her Circle</span></div></div><a class="btn btn-outline btn-sm" href="#messages" data-panel="messages">Message</a></div>
-        </div>
-      </section>
-
-      <section class="portal-panel" id="messages">
-        <h2>Messages</h2>
-        <div class="card">
-          <div class="list-row"><div class="person"><img src="assets/img/member-2.jpg" alt="" width="44" height="44"><div><strong>Priya Raman</strong><span>Loved your pitch draft! A few notes before Thursday&hellip;</span></div></div><span class="tag">New</span></div>
-          <div class="list-row"><div class="person"><img src="assets/img/member-3.jpg" alt="" width="44" height="44"><div><strong>Ana Reyes</strong><span>Are you going to the Soir&eacute;e? Let&rsquo;s carpool!</span></div></div><span class="tag">New</span></div>
-          <div class="list-row"><div class="person"><img src="assets/img/member-4.jpg" alt="" width="44" height="44"><div><strong>Business Circle</strong><span>Grace: Reminder &mdash; founders&rsquo; supper RSVPs close Friday.</span></div></div><span class="tag">New</span></div>
-        </div>
-      </section>
-
-      <section class="portal-panel" id="groups-panel">
-        <h2>My Groups</h2>
-        <div class="grid grid-2">
-          <div class="card"><div class="card-icon card-icon--blue"><svg class="icon"><use href="#i-chart"/></svg></div><h4>Business</h4><p>412 members &middot; 8 new posts</p></div>
-          <div class="card"><div class="card-icon card-icon--gold"><svg class="icon"><use href="#i-leaf"/></svg></div><h4>Wellness</h4><p>538 members &middot; 3 new posts</p></div>
-        </div>
-      </section>
-
-      <section class="portal-panel" id="events-panel">
-        <h2>Registered Events</h2>
-        <div class="grid">
-          <article class="card event-card"><div class="event-date"><strong>14</strong><span>Nov</span></div><div><h3>Autumn Circle Soir&eacute;e</h3><div class="event-meta"><span><svg class="icon"><use href="#i-pin"/></svg> San Francisco</span></div><span class="tag tag--blue">Going</span></div></article>
-          <article class="card event-card"><div class="event-date"><strong>11</strong><span>Dec</span></div><div><h3>Founders&rsquo; Holiday Supper</h3><div class="event-meta"><span><svg class="icon"><use href="#i-pin"/></svg> Los Angeles</span></div><span class="tag tag--blue">Going</span></div></article>
-        </div>
-      </section>
-
-      <section class="portal-panel" id="saved">
-        <h2>Saved Resources</h2>
-        <div class="card">
-          <div class="list-row"><span><strong>Pricing Your Services</strong> &mdash; Workbook</span><a class="card-link" href="#"><svg class="icon"><use href="#i-download"/></svg> Download</a></div>
-          <div class="list-row"><span><strong>Negotiate Your Worth</strong> &mdash; Workshop recording</span><a class="card-link" href="#"><svg class="icon"><use href="#i-video"/></svg> Watch</a></div>
-          <div class="list-row"><span><strong>Goal-Setting Worksheet</strong> &mdash; Template</span><a class="card-link" href="#"><svg class="icon"><use href="#i-download"/></svg> Download</a></div>
-        </div>
-      </section>
-
-      <section class="portal-panel" id="mentorship-panel">
-        <h2>Mentorship</h2>
-        <div class="card">
-          <div class="person" style="margin-bottom:1rem"><img src="assets/img/member-2.jpg" alt="" width="52" height="52"><div><strong>Priya Raman</strong><span>Your mentor &middot; 1:1 Mentorship</span></div></div>
-          <div class="progress"><span style="width:66%"></span></div>
-          <p class="form-note">4 of 6 sessions complete</p>
-          <ul class="check-list">
-            <li><svg class="icon"><use href="#i-check"/></svg> Define 6-month goals</li>
-            <li><svg class="icon"><use href="#i-check"/></svg> Build pricing model</li>
-            <li><svg class="icon"><use href="#i-check"/></svg> Draft partner pitch</li>
-          </ul>
-          <a class="btn btn-primary btn-sm" href="#">Schedule next session</a>
-        </div>
-      </section>
-
-      <section class="portal-panel" id="settings">
-        <h2>Account Settings</h2>
-        <div class="card">
-          <div class="toggle"><label for="s-news">Monthly newsletter</label><input id="s-news" type="checkbox" checked></div>
-          <div class="toggle"><label for="s-events">Event reminders</label><input id="s-events" type="checkbox" checked></div>
-          <div class="toggle"><label for="s-dir">Show me in member directory</label><input id="s-dir" type="checkbox" checked></div>
-          <div class="toggle"><label for="s-msg">Allow messages from all members</label><input id="s-msg" type="checkbox"></div>
-          <p style="margin-top:1.25rem">Current plan: <strong>Circle</strong> &middot; <a href="membership.html#tiers">Change plan</a></p>
-        </div>
-      </section>
+      <form class="form" style="max-width:420px" data-demo>
+        <div class="field"><label for="l-email">Email</label><input id="l-email" type="email" name="email" required autocomplete="email"></div>
+        <div class="field"><label for="l-password">Password</label><input id="l-password" type="password" name="password" required autocomplete="current-password"></div>
+        <div><button class="btn" type="submit">Sign in</button></div>
+        <p class="form-success" role="status">The member area isn&rsquo;t open yet. We&rsquo;ll email members when it launches.</p>
+      </form>
+      <p class="muted" style="margin-top:2rem">Not a member yet? <a href="membership.html#join">Apply to join</a>.</p>
     </div>
   </div>
 </section>
