@@ -7,10 +7,16 @@
   <title>Stories | Her Circle</title>
   <meta name="description" content="Profiles and stories from the women of Her Circle.">
   <meta name="theme-color" content="#51217D">
+  <meta property="og:image" content="assets/img/hero.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Her Circle">
   <meta property="og:title" content="Stories | Her Circle">
   <meta property="og:description" content="Profiles and stories from the women of Her Circle.">
-  <meta property="og:image" content="assets/img/hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/icons/icon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="preload" href="assets/fonts/playfair-display-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/montserrat-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -25,7 +31,12 @@
 <header class="site-header">
   <div class="container nav">
     <a class="brand" href="index.html" aria-label="Her Circle home">
-      <img src="assets/img/logo.svg" alt="" width="40" height="40">
+      <svg viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+        <defs><linearGradient id="logo-grad-header" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6D2FA3"/><stop offset=".45" stop-color="#51217D"/><stop offset=".75" stop-color="#074787"/><stop offset="1" stop-color="#0876C9"/></linearGradient></defs>
+        <path d="M152 44A80 80 0 1 0 172 128" fill="none" stroke="url(#logo-grad-header)" stroke-width="9" stroke-linecap="round"/>
+        <text x="100" y="114" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-weight="600" font-size="64" fill="url(#logo-grad-header)">HER</text>
+        <text x="100" y="142" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="14" fill="#51217D" letter-spacing="4">CIRCLE</text>
+      </svg>
       <span>HER CIRCLE</span>
     </a>
     <nav aria-label="Main">
@@ -85,7 +96,7 @@
 <main id="main">
 <header class="page-head">
   <div class="container">
-    <p class="label">Stories</p>
+    <ol class="breadcrumbs" aria-label="Breadcrumb"><li><a href="index.html">Home</a></li><li aria-current="page">Stories</li></ol>
     <h1>Stories</h1>
     <p>The women of Her Circle, in their own words: how they got here and what they&rsquo;ve learned along the way.</p>
   </div>
@@ -155,13 +166,18 @@
     <div class="footer-grid">
       <div>
         <a class="brand" href="index.html">
-          <img src="assets/img/logo.svg" alt="" width="40" height="40">
+          <svg viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+          <defs><linearGradient id="logo-grad-footer" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6D2FA3"/><stop offset=".45" stop-color="#51217D"/><stop offset=".75" stop-color="#074787"/><stop offset="1" stop-color="#0876C9"/></linearGradient></defs>
+          <path d="M152 44A80 80 0 1 0 172 128" fill="none" stroke="url(#logo-grad-footer)" stroke-width="9" stroke-linecap="round"/>
+          <text x="100" y="114" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-weight="600" font-size="64" fill="url(#logo-grad-footer)">HER</text>
+          <text x="100" y="142" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="14" fill="#51217D" letter-spacing="4">CIRCLE</text>
+      </svg>
           <span>HER CIRCLE</span>
         </a>
         <p>A community of women supporting each other to grow, lead, and create impact.</p>
       </div>
       <div>
-        <h4>Circle</h4>
+        <p class="footer-heading">Circle</p>
         <ul>
           <li><a href="about.html">About</a></li>
           <li><a href="community.html">Community</a></li>
@@ -170,7 +186,7 @@
         </ul>
       </div>
       <div>
-        <h4>Members</h4>
+        <p class="footer-heading">Members</p>
         <ul>
           <li><a href="membership.html">Membership</a></li>
           <li><a href="mentorship.html">Mentorship</a></li>
@@ -179,7 +195,7 @@
         </ul>
       </div>
       <div>
-        <h4>Contact</h4>
+        <p class="footer-heading">Contact</p>
         <ul>
           <li><a href="contact.html">Get in touch</a></li>
           <li><a href="contact.html#inquiries">Partnerships</a></li>

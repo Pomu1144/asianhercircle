@@ -20,6 +20,7 @@ A static, dependency-free site (HTML, CSS, vanilla JS) built from the Her Circle
 | Privacy Policy | `privacy.html` | What data is collected, how it's used and shared, retention, GDPR / U.S. state rights |
 | Terms of Use | `terms.html` | Eligibility, membership, community conduct, content license, disclaimers, governing law |
 | Cookie Policy | `cookies.html` | Browser storage in use and how to change choices |
+| Not found | `404.html` | Branded error page (served automatically by GitHub Pages and most hosts) |
 
 ## Brand system
 
@@ -32,7 +33,17 @@ All tokens live at the top of `assets/css/styles.css`:
 - **Gradient:** signature gradient, used as a thin accent bar on the header
 - **Type:** Playfair Display (headings), Montserrat (body), self-hosted in `assets/fonts/` (SIL Open Font License)
 
-Photography in `assets/img/` was generated with Higgsfield.
+Photography in `assets/img/` was generated with Higgsfield in one consistent documentary style and upscaled for large screens.
+
+## Images
+
+Each photo is published as `NAME.jpg` (fallback) plus `NAME-800.webp`, `NAME-1600.webp` and `NAME-2400.webp`, so browsers download only the size they need. To add or replace a photo:
+
+```sh
+scripts/optimize_image.sh path/to/original.png name
+```
+
+Then use it in a page as `<img data-photo="name" alt="Describe the photo">`. The build expands this into a responsive image with dimensions and lazy loading. Add `fetchpriority="high"` for an image at the top of a page, and `sizes="..."` when it isn't full width.
 
 ## Editing
 
@@ -53,7 +64,7 @@ Don't edit the generated `*.html` files in the repository root directly.
 
 ## Privacy and legal
 
-**Before launch, fill in `src/site.json`** (legal entity name, privacy contact email, mailing address, governing state) and rebuild. The build prints a warning while any value is still a `[placeholder]`. Have a lawyer review the Privacy Policy and Terms of Use for your organization and jurisdiction; they are a starting point, not legal advice.
+**Before launch, fill in `src/site.json`** (site URL, legal entity name, privacy contact email, mailing address, governing state) and rebuild. Setting `site_url` also turns on canonical links, absolute social-sharing URLs, and generates `sitemap.xml` and `robots.txt`. The build prints a warning while any value is still a `[placeholder]`. Have a lawyer review the Privacy Policy and Terms of Use for your organization and jurisdiction; they are a starting point, not legal advice.
 
 **Consent banner.** Every page shows a privacy banner until the visitor chooses Accept all, Reject non-essential, or saves preferences (Essential / Analytics / Marketing). The choice is stored in the browser (`hc-consent`) and can be changed from "Privacy settings" in the footer. The banner asks again after 12 months or when `consent_version` in `src/site.json` changes, so bump that date whenever the policies change materially. A Global Privacy Control signal keeps marketing off.
 

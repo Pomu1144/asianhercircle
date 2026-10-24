@@ -5,12 +5,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Her Circle</title>
-  <meta name="description" content="Her Circle is a community of women supporting each other to grow, lead, and create impact.">
+  <meta name="description" content="Her Circle is a community of women supporting each other to grow, lead, and create impact through connection, mentorship and shared experience.">
   <meta name="theme-color" content="#51217D">
-  <meta property="og:title" content="Her Circle">
-  <meta property="og:description" content="Her Circle is a community of women supporting each other to grow, lead, and create impact.">
   <meta property="og:image" content="assets/img/hero.jpg">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Her Circle", "description": "A community of women supporting each other to grow, lead, and create impact.", "slogan": "Connect. Empower. Inspire."}</script>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Her Circle">
+  <meta property="og:title" content="Her Circle">
+  <meta property="og:description" content="Her Circle is a community of women supporting each other to grow, lead, and create impact through connection, mentorship and shared experience.">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/icons/icon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="preload" href="assets/fonts/playfair-display-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/montserrat-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -25,7 +32,12 @@
 <header class="site-header">
   <div class="container nav">
     <a class="brand" href="index.html" aria-label="Her Circle home">
-      <img src="assets/img/logo.svg" alt="" width="40" height="40">
+      <svg viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+        <defs><linearGradient id="logo-grad-header" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6D2FA3"/><stop offset=".45" stop-color="#51217D"/><stop offset=".75" stop-color="#074787"/><stop offset="1" stop-color="#0876C9"/></linearGradient></defs>
+        <path d="M152 44A80 80 0 1 0 172 128" fill="none" stroke="url(#logo-grad-header)" stroke-width="9" stroke-linecap="round"/>
+        <text x="100" y="114" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-weight="600" font-size="64" fill="url(#logo-grad-header)">HER</text>
+        <text x="100" y="142" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="14" fill="#51217D" letter-spacing="4">CIRCLE</text>
+      </svg>
       <span>HER CIRCLE</span>
     </a>
     <nav aria-label="Main">
@@ -84,61 +96,93 @@
 
 <main id="main">
 <section class="hero">
-  <div class="container">
-    <p class="hero-mark">CONNECT<span>|</span>EMPOWER<span>|</span>INSPIRE</p>
-    <div class="hero-grid">
-      <h1>Women helping women grow, lead and create impact.</h1>
-      <div>
-        <p class="lead">Her Circle brings together founders, professionals and leaders to share real experience, learn from one another and open doors for the next woman.</p>
-        <div class="actions">
-          <a class="btn" href="membership.html#join">Join Her Circle</a>
-          <a class="btn btn--ghost" href="about.html">About us</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <figure class="hero-photo container">
-    <img src="assets/img/hero.jpg" alt="Women talking and laughing together around a table" width="1344" height="752" fetchpriority="high">
+  <figure class="hero-media">
+    <img src="assets/img/hero.jpg" srcset="assets/img/hero-800.webp 800w, assets/img/hero-1600.webp 1600w, assets/img/hero-2400.webp 2400w" width="1600" height="896" alt="" sizes="100vw" fetchpriority="high">
   </figure>
-</section>
-
-<section class="section">
-  <div class="container row">
-    <p class="label">Our four pillars</p>
-    <div>
-      <h2 class="measure">Everything we do comes back to four things.</h2>
-      <ol class="items" style="--cols:2;margin-top:2rem">
-        <li><span class="num">01</span><h3>Connection</h3><p>Small gatherings and an online space where members get to know each other properly.</p></li>
-        <li><span class="num">02</span><h3>Mentorship</h3><p>Pairing women who have built something with women who are building now.</p></li>
-        <li><span class="num">03</span><h3>Leadership</h3><p>Practical sessions on negotiating, managing, raising money and being heard.</p></li>
-        <li><span class="num">04</span><h3>Wellbeing</h3><p>Room to talk honestly about balance, family and the cost of ambition.</p></li>
-      </ol>
+  <div class="container hero-content">
+    <p class="hero-mark">CONNECT<span>|</span>EMPOWER<span>|</span>INSPIRE</p>
+    <h1>Women helping women grow, lead and create impact.</h1>
+    <p class="lead">Her Circle brings together founders, professionals and leaders to share real experience, learn from one another and open doors for the next woman.</p>
+    <div class="actions">
+      <a class="btn btn--light" href="membership.html#join">Join Her Circle</a>
+      <a class="btn btn--ghost" href="about.html">Our mission</a>
     </div>
   </div>
 </section>
 
 <section class="section">
-  <div class="container row">
-    <p class="label">Member spotlight</p>
-    <article class="profile">
-      <div class="profile-photo" role="img" aria-label="Kristin Ma">KM</div>
-      <div>
-        <h2>Kristin Ma</h2>
-        <p class="role">Co-Founder, JXZ Flooring</p>
-        <p class="measure">Kristin co-founded JXZ Flooring, one of Ohio&rsquo;s leading wholesale suppliers of engineered hardwood flooring, in the traditionally male-dominated flooring and construction materials industry. Through the club, she looks forward to sharing real-world experience, learning from fellow founders, and helping more women turn ambition into meaningful and lasting impact.</p>
-        <a class="more" href="stories.html#kristin-ma">Read Kristin&rsquo;s profile</a>
-      </div>
-    </article>
+  <div class="container intro">
+    <h2 class="statement">Ambition grows faster in good company. We make sure no woman has to build alone.</h2>
+    <div>
+      <p class="muted">Many of our members are building careers and companies in industries where they are still the only woman in the room. Her Circle is where they compare notes, find mentors and make the introductions that change what&rsquo;s possible.</p>
+      <a class="more" href="about.html">About Her Circle</a>
+    </div>
   </div>
 </section>
 
 <section class="section section--tint">
-  <div class="container row">
-    <p class="label">Upcoming events</p>
-    <div>
-      <h2 class="measure">Our first events are being scheduled.</h2>
-      <p class="muted measure">Workshops, networking evenings and virtual sessions are on the way. Join the newsletter to hear about dates first.</p>
-      <a class="more" href="events.html">What to expect</a>
+  <div class="container">
+    <p class="label">Our four pillars</p>
+    <h2 class="measure">Everything we do comes back to four things.</h2>
+    <ol class="items" style="--cols:4;margin-top:2.5rem">
+      <li><span class="num">01</span><h3>Connection</h3><p>Small gatherings and an online space where members get to know each other properly.</p></li>
+      <li><span class="num">02</span><h3>Mentorship</h3><p>Pairing women who have built something with women who are building now.</p></li>
+      <li><span class="num">03</span><h3>Leadership</h3><p>Practical sessions on negotiating, managing, raising money and being heard.</p></li>
+      <li><span class="num">04</span><h3>Wellbeing</h3><p>Room to talk honestly about balance, family and the cost of ambition.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <p class="label">Our members</p>
+    <h2 class="measure">Meet the women of Her Circle.</h2>
+    <div class="members">
+      <article class="member">
+        <div class="profile-photo" role="img" aria-label="Kristin Ma">KM</div>
+        <div>
+          <h3>Kristin Ma</h3>
+          <p class="role">Co-Founder, JXZ Flooring</p>
+          <p>Built one of Ohio&rsquo;s leading wholesale suppliers of engineered hardwood flooring in a traditionally male-dominated industry.</p>
+          <a class="more" href="stories.html#kristin-ma">Read profile</a>
+        </div>
+      </article>
+      <article class="member">
+        <img class="profile-photo" src="assets/img/kristen-kidder.jpg" alt="Portrait of Kristen Kidder" width="600" height="900" loading="lazy" decoding="async">
+        <div>
+          <h3>Kristen Kidder</h3>
+          <p class="role">Realtor and Real Estate Investor</p>
+          <p>Residential and commercial Realtor and investor, entrepreneur across four industries, and a mountaineer who has climbed to 7,206 meters.</p>
+          <a class="more" href="stories.html#kristen-kidder">Read profile</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <p class="label">Get involved</p>
+    <h2 class="measure">Three ways to take part.</h2>
+    <div class="paths">
+      <a class="path" href="membership.html">
+        <figure><img src="assets/img/community.jpg" srcset="assets/img/community-800.webp 800w, assets/img/community-1600.webp 1600w, assets/img/community-2400.webp 2400w" width="1600" height="1080" alt="Women in conversation in a community room" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 380px" loading="lazy" decoding="async"></figure>
+        <h3>Membership</h3>
+        <p>Join a community of women who show up for one another.</p>
+        <span class="more">Apply to join</span>
+      </a>
+      <a class="path" href="mentorship.html">
+        <figure><img src="assets/img/mentorship.jpg" srcset="assets/img/mentorship-800.webp 800w, assets/img/mentorship-1600.webp 1600w, assets/img/mentorship-2400.webp 2400w" width="1600" height="1080" alt="An experienced businesswoman mentoring a younger colleague" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 380px" loading="lazy" decoding="async"></figure>
+        <h3>Mentorship</h3>
+        <p>Find a mentor who has been there, or become one.</p>
+        <span class="more">Explore mentorship</span>
+      </a>
+      <a class="path" href="events.html">
+        <figure><img src="assets/img/networking.jpg" srcset="assets/img/networking-800.webp 800w, assets/img/networking-1600.webp 1600w, assets/img/networking-2400.webp 2400w" width="1600" height="1080" alt="Women talking at an evening networking reception" sizes="(max-width: 640px) 100vw, (max-width: 960px) 50vw, 380px" loading="lazy" decoding="async"></figure>
+        <h3>Events</h3>
+        <p>Workshops, networking evenings and founder roundtables.</p>
+        <span class="more">See what&rsquo;s planned</span>
+      </a>
     </div>
   </div>
 </section>
@@ -151,7 +195,7 @@
       <p>Event invitations, member stories and news, about once a month.</p>
       <form class="inline-form" data-demo novalidate>
         <label class="sr-only" for="nl-email">Email address</label>
-        <input id="nl-email" type="email" name="email" placeholder="Email address" required>
+        <input id="nl-email" type="email" name="email" placeholder="Email address" autocomplete="email" required>
         <button class="btn btn--light" type="submit">Subscribe</button>
         <label class="check"><input type="checkbox" name="email_consent" required> <span>I agree to receive emails from Her Circle. I can unsubscribe at any time. See our <a href="privacy.html">Privacy Policy</a>.</span></label>
         <p class="form-success" role="status">Thank you, you&rsquo;re on the list.</p>
@@ -165,13 +209,18 @@
     <div class="footer-grid">
       <div>
         <a class="brand" href="index.html">
-          <img src="assets/img/logo.svg" alt="" width="40" height="40">
+          <svg viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+          <defs><linearGradient id="logo-grad-footer" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6D2FA3"/><stop offset=".45" stop-color="#51217D"/><stop offset=".75" stop-color="#074787"/><stop offset="1" stop-color="#0876C9"/></linearGradient></defs>
+          <path d="M152 44A80 80 0 1 0 172 128" fill="none" stroke="url(#logo-grad-footer)" stroke-width="9" stroke-linecap="round"/>
+          <text x="100" y="114" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-weight="600" font-size="64" fill="url(#logo-grad-footer)">HER</text>
+          <text x="100" y="142" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="14" fill="#51217D" letter-spacing="4">CIRCLE</text>
+      </svg>
           <span>HER CIRCLE</span>
         </a>
         <p>A community of women supporting each other to grow, lead, and create impact.</p>
       </div>
       <div>
-        <h4>Circle</h4>
+        <p class="footer-heading">Circle</p>
         <ul>
           <li><a href="about.html">About</a></li>
           <li><a href="community.html">Community</a></li>
@@ -180,7 +229,7 @@
         </ul>
       </div>
       <div>
-        <h4>Members</h4>
+        <p class="footer-heading">Members</p>
         <ul>
           <li><a href="membership.html">Membership</a></li>
           <li><a href="mentorship.html">Mentorship</a></li>
@@ -189,7 +238,7 @@
         </ul>
       </div>
       <div>
-        <h4>Contact</h4>
+        <p class="footer-heading">Contact</p>
         <ul>
           <li><a href="contact.html">Get in touch</a></li>
           <li><a href="contact.html#inquiries">Partnerships</a></li>

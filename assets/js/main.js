@@ -2,6 +2,14 @@
 (function () {
   "use strict";
 
+  // Header shadow once the page scrolls
+  var header = document.querySelector(".site-header");
+  if (header) {
+    var onScroll = function () { header.classList.toggle("is-scrolled", window.scrollY > 4); };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  }
+
   // Mobile navigation
   var toggle = document.querySelector(".nav-toggle");
   var menu = document.getElementById("nav-menu");

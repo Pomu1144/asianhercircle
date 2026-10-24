@@ -1,5 +1,6 @@
 {
   "_comment": "Legal and contact details used on the legal pages and in the consent banner. Replace every value in [brackets] before launch, then run python3 scripts/build.py.",
+  "site_url": "[https://your-domain.com]",
   "legal_name": "[Her Circle legal entity name]",
   "contact_email": "[privacy contact email]",
   "mailing_address": "[mailing address]",
