@@ -14,7 +14,7 @@ A static, dependency-free site (HTML, CSS, vanilla JS) built from the Her Circle
 | Events | `events.html` | Upcoming (notify me), event formats, past events |
 | Mentorship | `mentorship.html` | Find a mentor, how it works, become a mentor, application |
 | Membership | `membership.html` | What's included, how to join, application, FAQ |
-| Stories | `stories.html` | Member profiles (Kristin Ma), share your story |
+| Stories | `stories.html` | Member profiles (Kristin Ma, Kristen Kidder), share your story |
 | Contact | `contact.html` | Contact form, partnership / speaking / press inquiries |
 | Member login | `portal.html` | Sign-in screen for the future member area |
 | Privacy Policy | `privacy.html` | What data is collected, how it's used and shared, retention, GDPR / U.S. state rights |
