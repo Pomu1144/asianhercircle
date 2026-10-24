@@ -11,9 +11,8 @@
   <meta property="og:description" content="Find a mentor or become one through Her Circle.">
   <meta property="og:image" content="assets/img/hero.jpg">
   <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap">
+  <link rel="preload" href="assets/fonts/playfair-display-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/montserrat-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body class="">
@@ -144,6 +143,7 @@
         <div class="field"><label for="m-industry">Industry</label><input id="m-industry" name="industry"></div>
       </div>
       <div class="field"><label for="m-goals">What would you like to work on?</label><textarea id="m-goals" name="goals"></textarea></div>
+      <p class="form-note">We use your information to find a match. If we introduce you, we&rsquo;ll share the relevant parts of your application with your mentor or mentee. See our <a href="privacy.html">Privacy Policy</a>.</p>
       <div><button class="btn" type="submit">Submit</button></div>
       <p class="form-success" role="status">Thank you. We&rsquo;ll be in touch.</p>
     </form>
@@ -189,11 +189,54 @@
     </div>
     <div class="footer-bottom">
       <span>&copy; <span data-year>2026</span> Her Circle</span>
-      <span>Connect &middot; Empower &middot; Inspire</span>
+      <nav class="footer-legal" aria-label="Legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="cookies.html">Cookie Policy</a>
+        <button type="button" data-consent-open>Privacy settings</button>
+      </nav>
     </div>
   </div>
 </footer>
 
+<!--
+  Privacy consent banner. Scripts that need consent are added as
+    <script type="text/plain" data-consent="analytics" data-src="https://..."></script>
+  and are only run by consent.js after the visitor allows that category.
+-->
+<section class="consent" id="consent" data-version="2026-10-24" role="dialog" aria-labelledby="consent-title" aria-describedby="consent-text" hidden>
+  <div class="container consent-inner">
+    <div class="consent-copy">
+      <h2 id="consent-title">Your privacy</h2>
+      <p id="consent-text">We use essential storage to run this site and remember your choices. With your permission, we may also use analytics and marketing tools. You can change your mind at any time from &ldquo;Privacy settings&rdquo; in the footer. Read our <a href="privacy.html">Privacy Policy</a> and <a href="cookies.html">Cookie Policy</a>.</p>
+      <p class="consent-gpc" hidden>Your browser&rsquo;s Global Privacy Control signal is on, so marketing stays off.</p>
+    </div>
+    <form class="consent-prefs" id="consent-prefs" hidden>
+      <fieldset>
+        <legend class="sr-only">Privacy preferences</legend>
+        <label class="consent-option">
+          <input type="checkbox" checked disabled>
+          <span><strong>Essential</strong> Needed for the site to work, such as remembering your privacy choices. Always on.</span>
+        </label>
+        <label class="consent-option">
+          <input type="checkbox" name="analytics">
+          <span><strong>Analytics</strong> Helps us understand how the site is used so we can improve it.</span>
+        </label>
+        <label class="consent-option">
+          <input type="checkbox" name="marketing">
+          <span><strong>Marketing</strong> Lets us measure our outreach and show relevant content on other sites.</span>
+        </label>
+      </fieldset>
+    </form>
+    <div class="consent-actions">
+      <button class="btn btn--ghost" type="button" data-consent-action="reject">Reject non-essential</button>
+      <button class="btn btn--ghost" type="button" data-consent-action="customize">Preferences</button>
+      <button class="btn btn--ghost" type="button" data-consent-action="save" hidden>Save choices</button>
+      <button class="btn" type="button" data-consent-action="accept">Accept all</button>
+    </div>
+  </div>
+</section>
+<script src="assets/js/consent.js" defer></script>
 <script src="assets/js/main.js" defer></script>
 </body>
 </html>

@@ -17,6 +17,9 @@ A static, dependency-free site (HTML, CSS, vanilla JS) built from the Her Circle
 | Stories | `stories.html` | Member profiles (Kristin Ma), share your story |
 | Contact | `contact.html` | Contact form, partnership / speaking / press inquiries |
 | Member login | `portal.html` | Sign-in screen for the future member area |
+| Privacy Policy | `privacy.html` | What data is collected, how it's used and shared, retention, GDPR / U.S. state rights |
+| Terms of Use | `terms.html` | Eligibility, membership, community conduct, content license, disclaimers, governing law |
+| Cookie Policy | `cookies.html` | Browser storage in use and how to change choices |
 
 ## Brand system
 
@@ -27,7 +30,7 @@ All tokens live at the top of `assets/css/styles.css`:
 - **Accent:** Warm Gold `#D6A431` (used sparingly: section markers, active nav)
 - **Neutrals:** Soft Lavender `#F3ECFA`, Lavender Gray `#E6DDF0`, Warm White `#FDFCFD`, Dark Plum `#271538` (body text)
 - **Gradient:** signature gradient, used as a thin accent bar on the header
-- **Type:** Playfair Display (headings), Montserrat (body), via Google Fonts
+- **Type:** Playfair Display (headings), Montserrat (body), self-hosted in `assets/fonts/` (SIL Open Font License)
 
 Photography in `assets/img/` was generated with Higgsfield.
 
@@ -47,6 +50,22 @@ python3 scripts/build.py
 ```
 
 Don't edit the generated `*.html` files in the repository root directly.
+
+## Privacy and legal
+
+**Before launch, fill in `src/site.json`** (legal entity name, privacy contact email, mailing address, governing state) and rebuild. The build prints a warning while any value is still a `[placeholder]`. Have a lawyer review the Privacy Policy and Terms of Use for your organization and jurisdiction; they are a starting point, not legal advice.
+
+**Consent banner.** Every page shows a privacy banner until the visitor chooses Accept all, Reject non-essential, or saves preferences (Essential / Analytics / Marketing). The choice is stored in the browser (`hc-consent`) and can be changed from "Privacy settings" in the footer. The banner asks again after 12 months or when `consent_version` in `src/site.json` changes, so bump that date whenever the policies change materially. A Global Privacy Control signal keeps marketing off.
+
+**Adding analytics or marketing tools.** Don't add their scripts directly. Add them in a way that only runs after consent:
+
+```html
+<script type="text/plain" data-consent="analytics" data-src="https://example.com/analytics.js"></script>
+```
+
+Then list the tool and its cookies in `src/pages/cookies.html`, and bump `consent_version`.
+
+**Forms** carry the notices the policies rely on: the newsletter requires an explicit opt-in checkbox, the membership form has an optional newsletter opt-in, and every form links to the Privacy Policy. When you connect the forms to a service, make sure it is listed under service providers in the Privacy Policy.
 
 ## Running locally
 
