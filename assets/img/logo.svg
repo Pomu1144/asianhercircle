@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Her Circle">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6D2FA3"/>
+      <stop offset=".45" stop-color="#51217D"/>
+      <stop offset=".75" stop-color="#074787"/>
+      <stop offset="1" stop-color="#0876C9"/>
+    </linearGradient>
+  </defs>
+  <!-- open ring, echoing the brand mark's swoosh -->
+  <path d="M152 44A80 80 0 1 0 172 128" fill="none" stroke="url(#g)" stroke-width="9" stroke-linecap="round"/>
+  <path d="M156 58A72 72 0 0 1 166 92" fill="none" stroke="#0876C9" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+  <text x="100" y="114" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-weight="700" font-size="66" fill="url(#g)" letter-spacing="-2">HER</text>
+  <line x1="46" y1="137" x2="62" y2="137" stroke="#51217D" stroke-width="2"/>
+  <line x1="138" y1="137" x2="154" y2="137" stroke="#51217D" stroke-width="2"/>
+  <text x="100" y="142" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="14" fill="#51217D" letter-spacing="4">CIRCLE</text>
+</svg>
