@@ -1,0 +1,64 @@
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Her Circle home">
+      <svg viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+        <defs><linearGradient id="logo-grad-header" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6D2FA3"/><stop offset=".45" stop-color="#51217D"/><stop offset=".75" stop-color="#074787"/><stop offset="1" stop-color="#0876C9"/></linearGradient></defs>
+        <path d="M152 44A80 80 0 1 0 172 128" fill="none" stroke="url(#logo-grad-header)" stroke-width="9" stroke-linecap="round"/>
+        <text x="100" y="114" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-weight="600" font-size="64" fill="url(#logo-grad-header)">HER</text>
+        <text x="100" y="142" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="14" fill="#51217D" letter-spacing="4">CIRCLE</text>
+      </svg>
+      <span>HER CIRCLE</span>
+    </a>
+    <nav aria-label="Main">
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html"{{current:home}}>Home</a></li>
+        <li><a href="about.html"{{current:about}}>About</a>
+          <ul class="submenu">
+            <li><a href="about.html#story">Our Story</a></li>
+            <li><a href="about.html#mission">Mission</a></li>
+            <li><a href="about.html#why">Why Her Circle Exists</a></li>
+          </ul>
+        </li>
+        <li><a href="community.html"{{current:community}}>Community</a>
+          <ul class="submenu">
+            <li><a href="community.html#overview">Community Overview</a></li>
+            <li><a href="community.html#groups">Community Groups</a></li>
+            <li><a href="community.html#directory">Members</a></li>
+          </ul>
+        </li>
+        <li><a href="events.html"{{current:events}}>Events</a>
+          <ul class="submenu">
+            <li><a href="events.html#upcoming">Upcoming Events</a></li>
+            <li><a href="events.html#formats">What to Expect</a></li>
+            <li><a href="events.html#past">Past Events</a></li>
+          </ul>
+        </li>
+        <li><a href="mentorship.html"{{current:mentorship}}>Mentorship</a>
+          <ul class="submenu">
+            <li><a href="mentorship.html#find">Find a Mentor</a></li>
+            <li><a href="mentorship.html#become">Become a Mentor</a></li>
+            <li><a href="mentorship.html#programs">How It Works</a></li>
+          </ul>
+        </li>
+        <li><a href="membership.html"{{current:membership}}>Membership</a>
+          <ul class="submenu">
+            <li><a href="membership.html#benefits">What&rsquo;s Included</a></li>
+            <li><a href="membership.html#tiers">How to Join</a></li>
+            <li><a href="membership.html#faq">FAQ</a></li>
+            <li><a href="membership.html#join">Join Her Circle</a></li>
+          </ul>
+        </li>
+        <li><a href="stories.html"{{current:stories}}>Stories</a></li>
+        <li><a href="contact.html"{{current:contact}}>Contact</a></li>
+        <li class="nav-mobile-only"><a href="portal.html">Member login</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <a class="portal-link" href="portal.html">Member login</a>
+      <a class="btn" href="membership.html#join">Join</a>
+      <button class="nav-toggle" type="button" aria-controls="nav-menu" aria-expanded="false" aria-label="Open menu">
+        <svg class="icon"><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
