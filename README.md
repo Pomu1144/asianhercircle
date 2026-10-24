@@ -26,7 +26,7 @@ All tokens live at the top of `assets/css/styles.css`:
 - **Secondary:** Deep Navy Blue `#074787`, Bright Brand Blue `#0876C9`
 - **Accent:** Warm Gold `#D6A431` (used sparingly: section markers, active nav)
 - **Neutrals:** Soft Lavender `#F3ECFA`, Lavender Gray `#E6DDF0`, Warm White `#FDFCFD`, Dark Plum `#271538` (body text)
-- **Gradients:** signature, purple-to-blue, soft lavender
+- **Gradient:** signature gradient, used as a thin accent bar on the header
 - **Type:** Playfair Display (headings), Montserrat (body), via Google Fonts
 
 Photography in `assets/img/` was generated with Higgsfield.
